@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Open+Sans:wght@300&family=Questrial&family=Roboto:wght@100&display=swap");
+
+body {
+  background-color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  margin: auto;
+  text-align: center;
+  width: 90vw;
+  overflow-x: hidden;
+}
+
+img {
+  width: 11vw;
+  border-radius: 60px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.steps i {
+  font-size: 20px;
+}
+.steps a {
+  text-decoration: none;
+}
+.carousel {
+  display: flex;
+  flex-direction: row;
+  width: 43vw;
+  margin: auto;
+  background-color: #ffffff;
+  border-radius: 15px;
+  margin-top: 10vh;
+  overflow: auto;
+  position: relative;
+  bottom: 10vh;
+  padding: 5px;
+  margin-bottom: -10vh;
+  cursor: grab;
+}
+.carousel img {
+  width: 6vw;
+}
+.carousel::-webkit-scrollbar {
+  width: 16px;
+}
+
+.carousel::-webkit-scrollbar-track {
+  background-color: #ffffff;
+  border-radius: 100px;
+}
+
+.carousel::-webkit-scrollbar-thumb {
+  background-color: #40b983;
+  border-radius: 100px;
+}
+.steps {
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+  margin: auto;
+  width: 30vw;
+  margin-top: 60px;
+  margin-bottom: -20px;
+  justify-content: center;
+}
+.step1,
+.step2,
+.step3 {
+  margin: auto;
+}
+.step1 .inner i,
+.step2 .inner i {
+  background-color: #ffffff;
+  color: #40b983;
+  border: 1px solid #40b983;
+  border-radius: 60px;
+  padding: 5px;
+  -webkit-box-shadow: 0px 0px 24px -1px #40b983;
+  box-shadow: 0px 0px 24px -1px #40b983;
+}
+.step1 span,
+.step2 span {
+  color: #40b983;
+  font-size: small;
+}
+
+.step3 .inner i {
+  background-color: rgb(185, 184, 184);
+  color: rgb(26, 26, 26);
+  border: 1px solid rgb(155, 154, 154);
+  border-radius: 60px;
+  padding: 5px;
+}
+
+.step3 span {
+  color: rgb(150, 149, 149);
+  font-size: small;
+}
+h1 {
+  font-size: x-large;
+}
+.visual-id {
+  color: rgb(168, 168, 168);
+  font-size: medium;
+}
+.add i:hover {
+  color: #40b983;
+  cursor: pointer;
+  border: 1px solid #40b983;
+  transform: scale(1.5);
+}
+.add i {
+  font-size: 20px;
+  position: relative;
+  bottom: 45px;
+  left: 35px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 5px;
+  border: 1px solid black;
+}
+.divider span {
+  color: rgb(168, 168, 168);
+}
+.btn-continue {
+  width: 14vw;
+  height: 8vh;
+  background-color: #40b983;
+  color: #ffffff;
+  border-radius: 25px;
+  border: none;
+  position: relative;
+  bottom: 30px;
+}
+.btn-continue:hover {
+  -webkit-box-shadow: 3px 6px 24px -5px #40b983;
+  box-shadow: 3px 6px 24px -5px #40b983;
+  cursor: pointer;
+}
+.carousel img:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 0px 2px #40b983;
+  box-shadow: 0px 0px 0px 2px #40b983;
+}
+.personal input {
+  width: 25vw;
+  height: 8vh;
+  border-radius: 12px;
+  border: 1px solid rgb(194, 194, 194);
+  -webkit-box-shadow: 0px 0px 5px -1px #757575;
+  box-shadow: 0px 0px 5px -1px #757575;
+  margin-bottom: 2vh;
+}
+.personal input:hover {
+  box-shadow: 0px 0px 5px -1px #40b983;
+}
+.personal input:focus {
+  box-shadow: 0px 0px 5px -1px #40b983;
+  outline: none;
+}
+form {
+  margin-bottom: 50px;
+  margin-top: 5vh;
+}
+.bad::placeholder {
+  color: red;
+}
+@media (max-width: 800px) {
+  .steps {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+  }
+  .picture-selector img {
+    width: 30vw;
+  }
+  .carousel img {
+    width: 15vw;
+  }
+  .carousel img {
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+  .carousel {
+    width: 63vw;
+    position: relative;
+    bottom: 70px;
+  }
+  .step1,
+  .step2,
+  .step3 {
+    margin: 7%;
+  }
+  .wrapper {
+    position: relative;
+    bottom: -5px;
+  }
+  .divider {
+    position: relative;
+    bottom: 30px;
+  }
+  .btn-continue {
+    position: relative;
+    bottom: 50px;
+    width: 250px;
+  }
+  .step1 span {
+    font-size: medium;
+    position: relative;
+    top: 10px;
+  }
+  .step2 span {
+    font-size: medium;
+    position: relative;
+    top: 10px;
+  }
+  .step3 span {
+    font-size: medium;
+    position: relative;
+    top: 10px;
+  }
+  body {
+    overflow-x: hidden;
+    width: 80vw;
+  }
+  .personal input {
+    width: 250px;
+  }
+}

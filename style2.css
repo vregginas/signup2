@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Open+Sans:wght@300&family=Questrial&family=Roboto:wght@100&display=swap");
+
+body {
+  background-color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+.steps {
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+  margin: auto;
+  width: 30vw;
+  margin-top: 60px;
+  margin-bottom: -20px;
+  justify-content: center;
+}
+.step1,
+.step2,
+.step3 {
+  margin: 20px;
+}
+.step1 .inner i {
+  background-color: #ffffff;
+  color: #40b983;
+  border: 1px solid #40b983;
+  border-radius: 60px;
+  padding: 5px;
+  -webkit-box-shadow: 0px 0px 24px -1px #40b983;
+  box-shadow: 0px 0px 24px -1px #40b983;
+}
+.step1 span {
+  color: #40b983;
+  font-size: small;
+}
+
+.step3 .inner i,
+.step2 .inner i {
+  background-color: rgb(185, 184, 184);
+  color: rgb(26, 26, 26);
+  border: 1px solid rgb(155, 154, 154);
+  border-radius: 60px;
+  padding: 5px;
+}
+
+.step3 span,
+.step2 span {
+  color: rgb(150, 149, 149);
+  font-size: small;
+}
+.steps i {
+  font-size: 20px;
+}
+.pick-username {
+  font-size: x-large;
+}
+.pick-description {
+  color: rgb(168, 168, 168);
+  font-size: medium;
+}
+#user {
+  width: 25vw;
+  height: 8vh;
+  border-radius: 12px;
+  border: 1px solid rgb(194, 194, 194);
+  -webkit-box-shadow: 0px 0px 5px -1px #757575;
+  box-shadow: 0px 0px 5px -1px #757575;
+  margin-bottom: 2vh;
+  margin-top: 4vh;
+}
+#pass {
+  width: 25vw;
+  height: 8vh;
+  border-radius: 12px;
+  border: 1px solid rgb(194, 194, 194);
+  -webkit-box-shadow: 0px 0px 5px -1px #757575;
+  box-shadow: 0px 0px 5px -1px #757575;
+  margin-bottom: 2vh;
+}
+#conf {
+  width: 25vw;
+  height: 8vh;
+  border-radius: 12px;
+  border: 1px solid rgb(194, 194, 194);
+  -webkit-box-shadow: 0px 0px 5px -1px #757575;
+  box-shadow: 0px 0px 5px -1px #757575;
+  margin-bottom: 2vh;
+}
+.input:hover {
+  box-shadow: 0px 0px 5px -1px #40b983;
+}
+.input:focus {
+  box-shadow: 0px 0px 5px -1px #40b983;
+  outline: none;
+}
+.theswitch span {
+  color: #8b8b8b;
+  font-weight: 900;
+}
+.theswitch i {
+  border: 1px solid #40b983;
+  border-radius: 60px;
+  padding: 1px;
+  font-size: 15px;
+  background-color: #40b983;
+  color: #ffffff;
+  margin-left: 5px;
+}
+.theswitch i:hover {
+  cursor: pointer;
+  transform: scale(1.5);
+}
+.select {
+  border: 1px solid #ffffff !important;
+  background-color: #ffffff !important;
+  color: #40b983 !important;
+  transform: scale(1.5) !important;
+}
+#finish-signup {
+  width: 14vw;
+  height: 8vh;
+  background-color: #40b983;
+  color: #ffffff;
+  border-radius: 25px;
+  border: none;
+  margin-top: 10vh;
+}
+#finish-signup:hover {
+  -webkit-box-shadow: 3px 6px 24px -5px #40b983;
+  box-shadow: 3px 6px 24px -5px #40b983;
+  cursor: pointer;
+}
+.step1 a {
+  text-decoration: none;
+}
+.bad::placeholder {
+  color: red;
+}
+@media (max-width: 800px) {
+  .steps {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+  }
+  .step1,
+  .step2,
+  .step3 {
+    margin: 7%;
+  }
+  #finish-signup {
+    width: 250px;
+  }
+  .step1 span {
+    font-size: medium;
+    position: relative;
+    top: 10px;
+  }
+  .step2 span {
+    font-size: medium;
+    position: relative;
+    top: 10px;
+  }
+  .step3 span {
+    font-size: medium;
+    position: relative;
+    top: 10px;
+  }
+  body {
+    overflow-x: hidden;
+    width: 90vw;
+  }
+  #conf,
+  #pass,
+  #user {
+    width: 250px;
+  }
+}

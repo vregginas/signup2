@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Open+Sans:wght@300&family=Questrial&family=Roboto:wght@100&display=swap");
+
+body {
+  /* Location of the image */
+  background-image: url(img/bg.jpg);
+  /* Background image is centered vertically and horizontally at all times */
+  background-position: 100% 100%;
+
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+
+  /* Background image is fixed in the viewport so that it doesn't move when
+the content's height is greater than the image's height */
+  background-attachment: fixed;
+
+  /* This is what makes the background image rescale based
+on the container's size */
+  background-size: 90%;
+
+  /* Set a background color that will be displayed
+while the background image is loading */
+  background-color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  width: 80vw;
+}
+/*.signup-steps,*/
+
+.hero {
+  height: 100vh;
+  width: 80vw;
+}
+.visible1 {
+  position: relative;
+  left: 10vw;
+  top: 15vh;
+}
+.name input {
+  width: 175px;
+  height: 58px;
+  border-radius: 12px;
+  border: 1px solid rgb(194, 194, 194);
+  -webkit-box-shadow: 0px 0px 5px -1px #757575;
+  box-shadow: 0px 0px 5px -1px #757575;
+}
+.lastname input {
+  width: 175px;
+  height: 58px;
+  border-radius: 12px;
+  border: 1px solid rgb(194, 194, 194);
+  -webkit-box-shadow: 0px 0px 5px -1px #757575;
+  box-shadow: 0px 0px 5px -1px #757575;
+}
+.email input {
+  width: 380px;
+  height: 58px;
+  border-radius: 12px;
+  border: 1px solid rgb(194, 194, 194);
+  -webkit-box-shadow: 0px 0px 5px -1px #757575;
+  box-shadow: 0px 0px 5px -1px #757575;
+}
+.grid {
+  display: grid;
+  grid-template-columns: min-content;
+
+  grid-gap: 20px;
+
+  padding: 10px;
+}
+
+.email {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.signup-title {
+  font-weight: bolder;
+  margin-left: 1vw;
+}
+.signup-subtitle {
+  color: #b3afab;
+  font-size: medium;
+  margin-left: 1.2vw;
+  margin-top: -3vh;
+  margin-bottom: 5vh;
+}
+#signup-form input:hover {
+  box-shadow: 0px 0px 5px -1px #40b983;
+}
+#signup-form input:focus {
+  box-shadow: 0px 0px 5px -1px #40b983;
+  outline: none;
+}
+.control {
+  margin-top: 5vh;
+}
+.control span {
+  color: #8b8b8b;
+  font-weight: 900;
+}
+.control a {
+  color: #3f3e3d;
+  font-weight: 900;
+}
+.control a:hover {
+  color: #40b983;
+}
+.has-help {
+  margin-top: 4vh;
+}
+.continue {
+  width: 14vw;
+  height: 8vh;
+  background-color: #40b983;
+  color: #ffffff;
+  border-radius: 25px;
+  border: none;
+}
+.continue:hover {
+  -webkit-box-shadow: 3px 6px 24px -5px #40b983;
+  box-shadow: 3px 6px 24px -5px #40b983;
+  cursor: pointer;
+}
+.has-help span {
+  font-weight: 800;
+  margin-left: 1vw;
+}
+.has-help a {
+  color: #3f3e3d;
+  font-weight: 900;
+}
+.has-help a:hover {
+  color: #40b983;
+}
+.bad::placeholder {
+  color: red;
+}
+
+@media (max-width: 600px) {
+  body {
+    width: 100vw;
+    margin: auto;
+    overflow: hidden;
+  }
+  .grid {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 80px;
+    left: -30px;
+  }
+  .name input,
+  .lastname input,
+  .email input {
+    width: 250px;
+    margin: auto;
+  }
+  .control span {
+    color: black;
+    background-color: #ffffff;
+    border-radius: 15px;
+  }
+  .control a {
+    color: #40b983;
+  }
+  .has-help {
+    display: flex;
+    flex-direction: column;
+  }
+  .has-help span {
+    margin-top: 15px;
+  }
+  .continue {
+    width: 250px;
+    margin-left: 40px;
+    position: relative;
+    left: -30px;
+  }
+  .has-help a {
+    color: #40b983;
+  }
+  .signup-title,
+  .signup-subtitle {
+    width: 250px;
+    position: absolute;
+    left: -20px;
+    top: -30px;
+  }
+  .control span {
+    width: 100px;
+    position: relative;
+    left: -9px;
+  }
+}
